@@ -19,7 +19,7 @@ const showEvents = (event, id) => {
             </span>
             
              <p>${description}</p>
-            <img src='${'img-assets/' + id.toString() + '.jpg'}' alt='event photo' width='100%' height='30%'>
+            <img class="vr-event-image" style='object-fit:cover;' src=img-assets/${id.toString()}.jpg alt='event photo' width='100%' height='30%'>
             <button onclick="bookEvent(${booked} ,'${id}')" class="btn btn-tertiary">Book</button>
 
           </div>

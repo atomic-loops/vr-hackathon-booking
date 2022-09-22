@@ -8,6 +8,15 @@
   box-sizing: border-box;
 }
 
+
+.vr-event-image {
+    height: 200px;
+display: block;
+position: relative;
+overflow: hidden;
+object-fit: cover;
+}
+
 html {
     --primary-color:#e74c3c;
     --secondary-color:#222;
