@@ -1,12 +1,16 @@
-const eventsContainer = document.querySelector('.events-container')
-const nav = document.querySelector('nav')
-const welcomeEvent = document.querySelector('.welcome-event')
-const form = document.querySelector('.form')
+const eventsContainer = document.querySelector(".events-container");
+const nav = document.querySelector("nav");
+const welcomeEvent = document.querySelector(".welcome-event");
+const form = document.querySelector(".form");
+
+eventArray.forEach((event, index) => {
+  showEvents(event, index);
+});
 
 const showEvents = (event, id) => {
-  const {name, attendee, status, description, booked} = event
+  const { name, attendee, status, description, booked } = event;
 
-  const eventStatus = status === 0 ? 'free': 'paid'
+  const eventStatus = status === 0 ? "free" : "paid";
   const output = `
         <div class="card">
           <div class="card--details">
@@ -24,12 +28,11 @@ const showEvents = (event, id) => {
 
           </div>
         </div>
-        `
-    eventsContainer.innerHTML += output;
-}
+        `;
+  eventsContainer.innerHTML += output;
+};
 const bookEvent = (bookedStatus, eventId) => {
   console.log("Booking Event");
   console.log(bookedStatus, eventId);
-  window.location = 'bookings/bookseats.html'
-
-}
+  window.location = "bookings/bookseats.html";
+};

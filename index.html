@@ -16,53 +16,61 @@
     </main> -->
 
     <nav>
-        <div class="container">
-          <input id="responsive-menu" type="checkbox">
-          <label for="responsive-menu">
-            <span id="menu-icon"></span>
-            &nbsp;
-            <span id="menu-profile">
-              <img style="border-radius:5px; height:1em; width: 1em;" src="https://picsum.photos/200"></img>
-            </span>
-          </label>
-      
-          <div id="overlay"></div>
-          <ul>
-            <li>Events</li>
-            <li>Profile</li>
-            <li>Settings</li>
-          </ul>
+      <div class="container">
+        <input id="responsive-menu" type="checkbox" />
+        <label for="responsive-menu">
+          <span id="menu-icon"></span>
+          &nbsp;
+          <span id="menu-profile">
+            <img
+              style="border-radius: 5px; height: 1em; width: 1em"
+              src="img-assets/profile.jpg"
+            />
+          </span>
+        </label>
+
+        <div id="overlay"></div>
+        <ul>
+          <li>Events</li>
+          <li>Profile</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <h1 style="margin-top: 0">
+          Events<span>&emsp;<i class="fas fa-chevron-down"></i></span>
+        </h1>
+        <div id="search">
+          <i class="fas fa-map-marker-alt"></i>
+          <input type="text" placeholder="Search for upcoming events" />
+          <button style="font-size: 24px">
+            <i style="color: white" class="fas fa-search"></i>
+          </button>
         </div>
-      </nav>
-      
-      <main>
-        <div class="container">
-          <h1>Events<span>&nbsp;<i class="fas fa-chevron-down"></i></span></h1>
-          <div id="search">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="text" placeholder="Search for upcoming events" />
-            <button style='font-size:24px'><i class='fas fa-search'></i></button>
-          </div>
-          <div class="events-container">
-              <!-- <div id="card">
-                <img src="https://picsum.photos/600/300" />
+        <div class="events-container">
+          <!-- <div id="card">
+              <img src="https://picsum.photos/600/300" />
+              <div>
                 <div>
-                  <div>
-                    <h2>
-                      LA Dodgers
-                    </h2>
-                    <h3><i class="fas fa-bookmark"></i></h3>
-                  </div>
-                  <p>
-                    You can login and check out the screens and other details as well. Also, here is the link for the repo / project created.
-                  </p>
+                  <h2>
+                    LA Dodgers
+                  </h2>
+                  <h3><i class="fas fa-bookmark"></i></h3>
                 </div>
-              </div> -->
-          </div>
-      </main>
+                <p>
+                  You can login and check out the screens and other details as well. Also, here is the link for the repo / project created.
+                </p>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </main>
 
     <!-- <script src="app.js"></script> -->
-    <script src="app-new.js"></script>
     <script src="db.js"></script>
+    <script defer src="app-new.js"></script>
   </body>
 </html>

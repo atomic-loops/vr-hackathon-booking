@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style-new.css" />
+    <title>VR Event bookings</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <input id="responsive-menu" type="checkbox" />
+        <label for="responsive-menu">
+          <span id="menu-icon"></span>
+          &nbsp;
+          <span id="menu-profile">
+            <img
+              style="border-radius: 5px; height: 1em; width: 1em"
+              src="../img-assets/profile.jpg"
+            />
+          </span>
+        </label>
+
+        <div id="overlay"></div>
+        <ul>
+          <li>Events</li>
+          <li>Profile</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div id="card">
+          <img class="event-image" src="https://picsum.photos/600/300" />
+          <div
+            style="
+              position: fixed;
+              bottom: 0;
+              width: calc(100% - 16px - 16px);
+              max-width: calc(40em - 16px - 16px);
+            "
+          >
+            <div>
+              <h2 class="event-name">Event Not Found !!</h2>
+              <h3>
+                <i class="fas fa-bookmark">&emsp;</i
+                ><i class="fas fa-ellipsis-v"></i>&nbsp;
+              </h3>
+            </div>
+            <p class="event-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              corrupti, alias nemo debitis officia provident labore mollitia,
+              minima vitae eveniet expedita aspernatur perferendis.
+            </p>
+            <button onclick="purchaseEvent()" class="event-purchase-btn">
+              Purchase Ticket
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../db.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

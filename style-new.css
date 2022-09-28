@@ -257,6 +257,7 @@ button {
   flex-direction: column;
   align-items: stretch;
   margin-top: 1em;
+  cursor: pointer;
 
   /*   outline: 1px solid lightcoral; */
 }
@@ -279,5 +280,22 @@ h3 {
 }
 
 #book-btn {
+  cursor: pointer;
+}
+
+.event-purchase-btn {
+  background: #ffd300;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 1em;
+
+  font-family: "Oswald", sans-serif;
+  color: #fff;
   cursor: pointer;
 }
