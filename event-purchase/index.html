@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style-new.css" />
+    <title>VR Event Purchase</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <input id="responsive-menu" type="checkbox" />
+        <label for="responsive-menu">
+          <span id="menu-icon"></span>
+          &nbsp;
+          <span id="menu-profile">
+            <img
+              style="border-radius: 5px; height: 1em; width: 1em"
+              src="../img-assets/profile.jpg"
+            />
+          </span>
+        </label>
+
+        <div id="overlay"></div>
+        <ul>
+          <li>Events</li>
+          <li>Profile</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div
+          style="
+            word-break: break-all;
+            display: flex;
+            gap: 0.5em;
+            justify-content: space-between;
+            margin-bottom: 20em;
+          "
+        >
+          <div>
+            <h1>Confirmation</h1>
+
+            <br />
+            <br />
+            <h1>(1)Field level ticket ($25)</h1>
+
+            <br />
+            <br />
+            <h1>Pay with:</h1>
+            <div>
+              <img
+                src="../img-assets/payment-logos/klarna.jpg"
+                width="100"
+                alt=""
+              />
+              <br />
+              <img
+                src="../img-assets/payment-logos/visa.png"
+                width="60"
+                alt=""
+              />
+              <img
+                src="../img-assets/payment-logos/mastercard.jpg"
+                width="60"
+                alt=""
+              />
+            </div>
+          </div>
+          <div>
+            <img
+              class="event-image"
+              src="../img-assets/seat-selection.jpg"
+              width="150"
+              height="300"
+              style="object-fit: cover; border-radius: 5px"
+            />
+          </div>
+        </div>
+
+        <div id="card">
+          <div
+            style="
+              position: fixed;
+              bottom: 0;
+              width: calc(100% - 16px - 16px);
+              max-width: calc(40em - 16px - 16px);
+            "
+          >
+            <div>
+              <h2 class="event-name">Terms and Conditions</h2>
+            </div>
+            <div class="tnc-wrapper">
+              <input type="checkbox" name="tnc" id="tnc" />
+              <label for="tnc" class="event-description">
+                By clicking this button you are accepting our terms and
+                conditions.
+              </label>
+            </div>
+            <button onclick="purchaseEvent()" class="event-purchase-btn">
+              Purchase Ticket
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../db.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

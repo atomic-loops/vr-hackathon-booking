@@ -262,6 +262,10 @@ button {
   /*   outline: 1px solid lightcoral; */
 }
 
+#card > div {
+  background: var(--bg-black);
+}
+
 #card > div > div {
   display: flex;
   justify-content: space-between;
@@ -298,4 +302,21 @@ h3 {
   font-family: "Oswald", sans-serif;
   color: #fff;
   cursor: pointer;
+}
+
+/******************************TNC******************/
+
+.tnc-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.tnc-wrapper > label {
+  flex: 1;
+  /* background: #e5e5e5; */
+  padding: 1em;
+  border-radius: 10px;
 }

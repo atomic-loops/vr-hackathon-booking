@@ -18,5 +18,6 @@ document.querySelector(".event-description").innerHTML =
 // goto payment page
 const purchaseEvent = () => {
   console.log("Booking Event");
-  window.location = "../event-purchase/" + "?id=" + id + "&booked=" + booked;
+  window.location = "https://youtu.be/Z6LBJoIpLfA";
+  // window.location = "../event-purchase/" + "?id=" + id + "&booked=" + booked;
 };
